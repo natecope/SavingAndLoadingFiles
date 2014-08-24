@@ -17,13 +17,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    //Get documents folder for app
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    
+    NSLog(@"Document dir: %@", documentsDirectory);
+    
+    //Save nsstring to folder
+
+    NSString *filename = @"text.txt";
+    NSString *filepath = [documentsDirectory stringByAppendingPathComponent:filename];
+    NSString *saveTextData = @"Every app has its own documents folder";
+    
+    NSLog(@"filepath: %@", filepath);
+    
+    NSError *error = nil;
+    [saveTextData writeToFile:filepath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if(error){
+        NSLog(@"Save error: %@", [error localizedDescription]);
+    }
+    //load nsstring from folder
+
+    error = nil;
+    NSString *loadedTextData = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
+    
+    if(error){
+        NSLog(@"Load error: %@", [error localizedDescription]);
+    }
+    
+    NSLog(@"Loaded text data: %@", loadedTextData);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
