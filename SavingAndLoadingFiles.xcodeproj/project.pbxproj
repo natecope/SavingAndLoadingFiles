@@ -22,6 +22,7 @@
 		B2607EC919AA5F3D00A3530E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2607EA819AA5F3D00A3530E /* UIKit.framework */; };
 		B2607ED119AA5F3D00A3530E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2607ECF19AA5F3D00A3530E /* InfoPlist.strings */; };
 		B2607ED319AA5F3D00A3530E /* SavingAndLoadingFilesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2607ED219AA5F3D00A3530E /* SavingAndLoadingFilesTests.m */; };
+		B2663AFE19AA77A9008B2FDA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2663AFD19AA77A9008B2FDA /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		B2607ECE19AA5F3D00A3530E /* SavingAndLoadingFilesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SavingAndLoadingFilesTests-Info.plist"; sourceTree = "<group>"; };
 		B2607ED019AA5F3D00A3530E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B2607ED219AA5F3D00A3530E /* SavingAndLoadingFilesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavingAndLoadingFilesTests.m; sourceTree = "<group>"; };
+		B2663AFC19AA77A9008B2FDA /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B2663AFD19AA77A9008B2FDA /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				B2607EB919AA5F3D00A3530E /* Main_iPad.storyboard */,
 				B2607EBC19AA5F3D00A3530E /* ViewController.h */,
 				B2607EBD19AA5F3D00A3530E /* ViewController.m */,
+				B2663AFC19AA77A9008B2FDA /* TableViewController.h */,
+				B2663AFD19AA77A9008B2FDA /* TableViewController.m */,
 				B2607EBF19AA5F3D00A3530E /* Images.xcassets */,
 				B2607EAB19AA5F3D00A3530E /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 				B2607EBE19AA5F3D00A3530E /* ViewController.m in Sources */,
 				B2607EB519AA5F3D00A3530E /* AppDelegate.m in Sources */,
 				B2607EB119AA5F3D00A3530E /* main.m in Sources */,
+				B2663AFE19AA77A9008B2FDA /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +476,7 @@
 				B2607ED819AA5F3D00A3530E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2607ED919AA5F3D00A3530E /* Build configuration list for PBXNativeTarget "SavingAndLoadingFilesTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				B2607EDB19AA5F3D00A3530E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
